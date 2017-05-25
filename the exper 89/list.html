@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+    /*页面部分*/
+    *{color: #522a06;
+    }
+    
+	body{
+		background-image: url(images/bodybg.gif);
+		
+		font-size: 12px;
+		color: #522a06;
+		padding: 0;
+		font-family: "宋体"
+	}
+
+	ul{list-style-type: none;
+	   }
+    .ul{list-style-type: square;}
+	.li{float: left;}
+
+	a:link{color: #522a06;
+        text-decoration:none;
+		}
+	a:hover{text-decoration:underline;}
+
+	#header{height: 205px;
+		background-repeat: no-repeat;
+		background-image: url(images/bg.gif);
+		background-position:top center;
+	}
+	#banner{width: 200px;
+		height: 164px;
+		position: center;
+		
+	}
+	.logo{position: absolute;
+		top: 46px;
+		left:210px;}
+    #nav{height: 40px;
+    	background-image: url(images/nav.jpg);}
+    .nav_body{width: 2000px;
+    	position: center;
+    }
+    .nav_content{width:2000px;
+    	font-weight: bolder;
+    	color:#fff ;
+    }
+    .nav_search{ }
+
+
+       #sousuo{height: 19px;
+       	width: 140px;
+       	background-color: #f8f5ee;}
+       #so{width: 44px;
+       	height: 25px;
+       	background-color: #000;
+       	color: #fff;
+       	border:1px solid #f8f5ee;}
+
+
+    #b{height: 40px;
+    	color: #fff}
+    #b:hover{color:#f9f603;
+    	text-decoration: none;
+    	}
+
+/*页面主体部分*/
+#content{width: 1250px;
+         overflow: hidden;}
+#content_left{width: 200px;
+            margin-left:180px;
+            float: left; }
+    .guide{height: 40px;
+           padding-left:35px;
+           text-align: left;}
+
+#content_right{
+            margin-top: 41px;
+            margin-left: 25px;
+            width: 700px;
+            float: left;}
+    
+.one{font-weight: bolder;
+     color: black;}
+.two{font-weight: bolder;
+      color: #B00000}
+.f1{background-image: url(images/bg.png);
+border:1px solid #D0D0D0;
+line-height: 28px;}
+.f2{background-image: url(images/bg.png);
+border:1px solid #D0D0D0;
+margin-top: 20px;
+line-height: 28px;}
+.f3{text-align: center;
+color: red;
+}
+
+.the_bottom{height: 20px;width: 30px;
+            margin: 1px;
+            float: left;
+             padding-top: 5px;
+         }
+
+.the_bottom1{height: 18px;width: 30px;
+            margin-right: 5px;float: left;
+            border:1px solid gray;
+            padding-top: 5px;
+        }
+.the_one{color: #A52A2A;}
+.the_two{height: 18px;width: 35px;
+            margin-right: 5px;float: left;
+            border:1px solid gray;
+            padding-top: 5px;
+       color: #A52A2A; }
+
+.only_1{position: absolute;
+top: 276px;
+left: 470px;
+color:  #A52A2A;
+font-size: 17px;
+font-weight: bold;}
+
+/*页脚区域*/
+    #footer{height: 150px;
+      width: 1341px;
+      clear: left;
+      background-image: url(images/foot.gif);
+      }
+
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+<!-- 页面部分 -->
+<div id="header">
+<div style="height: 164px"></div>
+    <!--logo图片  -->
+    <div id="banner" class="logo"><img src="images/logo.png"></div>
+    <!-- 导航栏和搜索框 -->
+    <div id="nav">
+        <div class="nav_body">
+            <!-- 导航栏 -->
+
+            <div class="nav_content">
+            
+            <div class="li">
+            <div></div>
+            <ul >
+             <li class="li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li class="li"><a href="#" style="color:#f9f603" id="b">首页</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">中心概况</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">培训动态</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">学术争鸣</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">书坛新闻</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">名家展厅</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">燕赵风采</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">经典解读与示范</a>&nbsp;<span style="color: white;">|</span>&nbsp;</li>
+            <li class="li"><a href="#" id="b">谏言互动</a></li>
+            </ul>
+
+            </div>
+
+            <!-- 搜索框 -->
+            <div class="li">
+                 <ul class="li">
+                 <li class="li">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li  class="li"><input type="text" id="sousuo" /></li>
+                <li class="li"> <input type="button" value="搜索" id="so" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 页面主体部分 -->
+<div id="content">
+    <div id="content_left">
+        <div class="guide">当前位置：<a href="index.html">首页</a>
+        ><a href="#">培训动态</a></div>
+           <div class="f1">
+              <div><img src="images/pxdt.png"></div>
+              <div>
+                <ul>
+                    <li style="background-image: url(images/menubg.gif);background-repeat: no-repeat;">&nbsp;&nbsp;<a href="#"  class="two">招生启事</a></li>
+                    <li>&nbsp;&nbsp;<a href="#" class="one">公告发布</a></li>
+                    <li>&nbsp;&nbsp;<a href="#" class="one">师生作品</a></li>
+                    <li>&nbsp;&nbsp;<a href="#" class="one">艺考咨询</a></li>
+                    <li>&nbsp;&nbsp;<a href="#" class="one">授课现场</a></li>
+                    
+                </ul>
+               </div>
+           </div>
+
+           <div class="f2">
+                <div style="height: 20px"></div>
+                <div><img src="images/news.png"></div>
+                <div>
+                    <ul>
+                        <li>&nbsp;<a href="#">普及书法教育</a></li>
+                        <li>&nbsp;<a href="#">规范书法考级</a></li>
+                        <li>&nbsp;<a href="#">探究书法之道</a></li>
+                        <li>&nbsp;<a href="#">成就书法大家</a></li>
+                    </ul>
+                </div>    
+           </div>
+           <div>
+               <div style="height: 20px"></div>
+               <img src="images/tel.gif">
+           </div>
+    </div>
+
+
+    <div id="content_right">
+         <div><img src="images/listtitle.png"></div>
+         <div>
+             <ul class="ul" style="line-height: 34px;">
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+                 <li><a href="#">2016年上半年书法等级考试报名通知</a>
+                     <span style="float: right;">2016-03-15</span>
+                 </li>
+
+             </ul>
+         </div>
+         <div class="f3">
+              <div style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+               <div ><a href="#" class="the_bottom"><</a></div>
+               <div class="the_bottom" ><a href="#" class="the_one">1</a></div>
+               <div class="the_bottom1" ><a href="#" class="the_one">2</a></div>
+               <div class="the_bottom1"><a href="#" class="the_one">3</a></div>
+               <div class="the_bottom1"><a href="#" class="the_one">4</a></div>
+               <div class="the_bottom1"><a href="#" class="the_one">5</a></div>
+               <div class="the_bottom1"><a href="#" class="the_one">6</a></div>
+               <div class="the_bottom1"><a href="#" class="the_one">7</a></div>
+               <div class="the_bottom"><a href="#">...</a></div>
+                <div ><a href="#" class="the_two">199</a></div>
+                 <div><a href="#" class="the_two">200</a></div>
+              <div ><a href="#" class="the_two">></a></div>
+         </div>
+    </div>
+</div>
+
+<div class="only_1">招生启事</div>
+
+<!-- 页脚部分 -->
+<div id="footer" >
+  <div >
+    <ul>
+    <br/>
+    <br/>
+    <li class="ul li" style="list-style-type: none;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</li>
+    <li class="ul li" style="list-style-type: none;"><a href="#" class="bee">电子信箱</a>&nbsp;|&nbsp;</li>
+    <li class="ul li" style="list-style-type: none;"><a href="#" class="bee">设为首页</a>&nbsp;|&nbsp;</li>
+    <li class="ul li" style="list-style-type: none;"><a href="#" class="bee">在线调查</a>&nbsp;|&nbsp;</li>
+    <li class="ul li" style="list-style-type: none;"><a href="#" class="bee">加入收藏</a>&nbsp;|&nbsp;</li>
+    <li class="ul li" style="list-style-type: none;"><a href="#" class="bee">网站地图</a>&nbsp;|&nbsp;</li>
+    <li class="ul li" style="list-style-type: none;"><a href="#" class="bee">关于我们</a></li>
+    </ul>
+  </div>
+        <div align="center"><img src="images/line.jpg"></div>
+        <div align="center">Copyright2013-2014 Hebshufajia.com,All Rights Reserved</div>
+        <div align="center">冀ICP备05067795号 冀公网110402440008号</div>
+</div>
+
+</body>
+</html>
