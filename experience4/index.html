@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+  	<title>图片自动滚动</title>
+  	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+
+<body>
+	<div id="picScroll" onmouseover="setInterval()" onmouseout="">
+		<span id="picScroll1">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+		<span id="picScroll2">
+			<img src="images/1.jpg" />
+			<img src="images/2.jpg" />
+			<img src="images/3.jpg" />
+			<img src="images/4.jpg" />
+			<img src="images/5.jpg" />
+			<img src="images/6.jpg" />
+			<img src="images/7.jpg" />
+			<img src="images/8.jpg" />
+		</span>
+ 	</div> 
+  	<script type="text/javascript">
+  		var img=document.getElementById('picScroll');
+        var img1=document.getElementById('picScroll1');
+        var img2=document.getElementById('picScroll2');
+
+        function changeToLeft() {
+       if(img.scrollLeft-img1.offsetWidth>=0)
+       {
+       img.scrollLeft=0;
+       }
+       else{
+       img.scrollLeft+=1;
+       }
+     }
+         var MyMove=setInterval(changeToLeft,10)
+         img.onmouseover=function() 
+         {
+           clearInterval(MyMove);
+          }
+         img.onmouseout=function() 
+         {
+         MyMove=setInterval(changeToLeft,10);
+         }
+  	</script>
+ </body>
+</html>
