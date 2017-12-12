@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	    *{
+	    	font-size: 36px;
+	    }
+	    tr{
+            height: 30px;
+	    }
+	    table tr:hover{background-color: #dafdf3;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			//添加一行
+			document.getElementById("add").onclick=function(){
+                   function creatnew(){
+                   	var ta=document.getElementById("theone");
+                   	var row=document.createElement("tr");
+                    row.setAttribute("height","30px");
+                   	    for(var i=0;i<12;i++){
+                   	    var TD=document.createElement("td");
+                   	    row.appendChild(TD);
+                        }
+                   ta.appendChild(row);
+                   }
+                   creatnew();
+			}
+            //删除一行
+            document.getElementById("delete").onclick=function(){
+            	   var ta=document.getElementById("theone");
+            	   var childs=theone.childNodes;
+                   function deletenew(){
+                   	n=childs.length;
+                   	ta.removeChild(childs[n-1]);
+                   }
+                   deletenew();
+            }
+
+        }
+	</script>
+</head>
+<body>
+    <table width="1000px" border="1" id="theone">
+        <tr height="30px">
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  	
+        </tr>   	
+    </table>
+    <input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" />
+    <input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" />
+
+</body>
+</html>
