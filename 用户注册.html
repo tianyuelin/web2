@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户注册</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	   .red{color: red;}
+	</style>
+	<script type="text/javascript" src="jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//用户名不能为空
+			var $username=$('input[name="username"]');
+			$username.blur(function(){
+				if($username.val()==0){
+				var $error=$('<span class="red">用户名不能为空</span>');
+				$('td:eq(1)').append($error);
+			    }
+				else
+				{
+					$('span').remove();
+					
+				};
+			});
+
+			//密码不能为空
+			var $password1=$('input[name="password1"]');
+			$password1.blur(function(){
+				if($password1.val()==0){
+				var $error=$('<span class="red">密码不能为空</span>');
+				$('td:eq(3)').append($error);
+			    }
+				else
+				{
+					$('span').remove();
+					
+				};
+              });
+			   
+
+			  //密码和确认密码一致
+			  var $password1=$('input[name="password1"]');
+			  var $password2=$('[name="password2"]');
+			  
+              var $sub=$('input[name="submit"]');
+              $password2.blur(function(){
+                if($password1.val()!=$password2.val()){
+				var $error=$('<span class="red">确认密码和密码不一致</span>');
+				$('td:eq(5)').append($error);
+			    }
+				else
+				{
+					$('span').remove();
+					
+				};
+			  })
+
+		})
+	</script>
+</head>
+<body>
+    <table border="1px" bordercolor="red" cellspacing="0px" align="center">    <div align="center"><h2>用户注册</h2></div>
+    	<tr>
+    		<td align="right">用户名：</td>
+    		<td><input type="text" name="username" /></td>
+    	</tr>
+    	<tr>
+    		<td align="right">密码：</td>
+    		<td><input type="password" name="password1" /></td>
+    	</tr>
+    	<tr>
+    		<td align="right">确认密码：</td>
+    		<td><input type="password" name="password2" /></td>
+    	</tr>
+    	<tr>
+    		<td colspan="2" align="center"><input type="submit" value="注册" name="submit" /></td>
+    	</tr>
+    </table>
+
+</body>
+</html>
