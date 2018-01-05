@@ -1,0 +1,91 @@
+ 
+ *{margin: 0px;
+      padding: 0px;}
+    /*总页面*/
+    .all{background-image: url(images/bg1.png);
+      }
+    .text{text-align: center;}
+    .part{
+      float:left;}
+    .part1{float: right;}
+    ul li{list-style-type: none;
+    }
+    a:link{
+           color: black;
+           text-decoration: none;
+           font-family: "宋体";
+           font-size: 15px;
+          }
+     
+    a:hover{text-decoration: underline;
+      color: red;}
+    body{line-height: 1.8em}
+
+    /*头部*/
+    #b:link{color: gray;
+      text-decoration: none;
+           font-size:10px;}
+    #b:hover{text-decoration: underline;
+      color: #990099;}
+    #c:link{font-family: "宋体";
+          color:#000000;
+          font-weight: bolder;
+            font-size: 17px;
+             text-decoration: none;
+            }
+    #c:hover{text-decoration: underline;
+      color:#8A2BE2;}
+    
+    #banner{height: 200px;
+      background-image: url(images/bg.jpg);
+            background-repeat-y:no-repeat; }
+    #logo1{position: absolute;
+           top: 40px;
+           left: 210px;}
+    #logo2{position: absolute;
+           top: 60px;
+           left: 320px;}
+    #logo{font-family: "方正舒体";
+          font-weight: bolder;
+          font-size: 35px;}
+    #right-font{color: gray;
+                font-size: 15px;
+                float: right;}
+    /*导航栏*/
+    #nav-content{background-image: url(images/nav.png);
+               height: 40px;
+               text-align: center;
+              }
+     .nav{margin-top: 10px;
+      margin-right: 25px;}
+     .nav1{margin-left: 220px;}
+     .nav2{margin-top: 7px;}
+     .nav3{margin-top: 12px;}
+     .nav4{margin-left: 300px;}
+     .sousuo{height: 19px;width: 130px;}
+     /*正文部分*/
+      .content_left{
+        float: left;
+        margin-left: 220px;
+        margin-top: 10px;
+        background-image: url(images/lele1.jpg);
+        width:717px;
+        height:880px;
+        }
+        .content_right{float: left;
+        }
+      .content_left_1{margin-left: 179px;}
+               .content_1{font-size: 17px;
+                color: #B80000;}
+      .content_right_1{border:1px #C7C7C7 solid;
+        font-size: 12px;
+        width: 180px;
+        margin-left: 10px;
+        margin-top: 10px;}
+
+        /*底部*/
+        .bottom{font-size: 12px;
+          color: gray;}
+          #e:link{color: gray;
+            font-size: 12px;}
+
